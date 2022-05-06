@@ -62,7 +62,7 @@ ls(){
 		do
 		    eval "$line"
 		done < $file
-	    echo "`basename $file`:$server_host"
+	    echo "`basename $file`: $server_host"
 	    unset server_host
 	done
 }
