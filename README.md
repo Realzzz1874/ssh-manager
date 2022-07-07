@@ -1,5 +1,5 @@
 # ssh-manager
-easy to use ssh by password
+easy to use ssh by password. (windows coming soon...)
 
 ## usage
 
