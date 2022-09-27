@@ -2,11 +2,11 @@
 command=$1
 path=~/.ssh/sshm/
 add(){
-    read -r -p "server name:" server_name
-    read -r -p "server host:" server_host
-    read -r -p "server port(22):" server_port
-    read -r -p "server user(root):" server_user
-    read -r -p "server password:" server_password
+    read -r -p "server name: " server_name
+    read -r -p "server host: " server_host
+    read -r -p "server port(22): " server_port
+    read -r -p "server user(root): " server_user
+    read -r -p "server password: " server_password
 
     if [[ -z "$server_name" || -z "$server_host" ]]
     then
@@ -48,11 +48,11 @@ add(){
 
 	fi
 
-    echo "server_name=$server_name" >> $path$server_name
-    echo "server_host=$server_host" >> $path$server_name
-    echo "server_port=$server_port" >> $path$server_name
-    echo "server_user=$server_user" >> $path$server_name
-    echo "server_password=$server_password" >> $path$server_name
+    echo "server_name = $server_name" >> $path$server_name
+    echo "server_host = $server_host" >> $path$server_name
+    echo "server_port = $server_port" >> $path$server_name
+    echo "server_user = $server_user" >> $path$server_name
+    echo "server_password = $server_password" >> $path$server_name
 }
 
 ls(){
