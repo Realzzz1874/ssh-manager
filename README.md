@@ -1,4 +1,5 @@
 # ssh-manager
+
 easy to use ssh by password
 
 ## usage
@@ -11,26 +12,30 @@ chmod +x ./sshm.sh
 
 ```bash
 cp sshm.sh /usr/local/bin/sshm
-# use just like:
-sshp ls
+# use it just like:
+sshm ls
 ```
 
 ### add
+
 ```bash
 sshm add
 ```
 
 ### list
+
 ```bash
 sshm ls
 ```
 
 ### login server
+
 ```bash
 sshm server_name
 ```
 
 ### delete
+
 ```bash
 sshm rm server_name
 ```
